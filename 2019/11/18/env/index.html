@@ -4,8 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="movies, fong">
-    <meta name="description" content="movies | fong">
+    <meta name="keywords" content="编程环境, fong">
+    <meta name="description" content="各种编程环境第一天第一节node.js
+node.js(http://nodejs.cn/download/)npm命令
+npm -v来测试是否成功安装
+查看当前目录已安装插件：npm list
+更新全部插件： npm update [ -">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>movies | fong</title>
+    <title>编程环境 | fong</title>
     <link rel="icon" type="image/jpeg" href="/mypic.jpeg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -372,13 +376,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        movies
+                        编程环境
                     </div>
                 </div>
             </div>
@@ -488,12 +492,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E9%85%8D%E7%BD%AE/">
+                                <span class="chip bg-color">配置</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E9%85%8D%E7%BD%AE/" class="post-category">
+                                配置
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -502,7 +519,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-19
+                    2019-11-18
                 </div>
                 
 
@@ -516,14 +533,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    745
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 				
@@ -539,7 +556,84 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="各种编程环境"><a href="#各种编程环境" class="headerlink" title="各种编程环境"></a>各种编程环境</h1><h2 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h2><h3 id="第一节node-js"><a href="#第一节node-js" class="headerlink" title="第一节node.js"></a>第一节node.js</h3><ol>
+<li><h3 id="node-js-http-nodejs-cn-download"><a href="#node-js-http-nodejs-cn-download" class="headerlink" title="node.js(http://nodejs.cn/download/)"></a>node.js(<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a>)</h3><h5 id="npm命令"><a href="#npm命令" class="headerlink" title="npm命令"></a>npm命令</h5><ul>
+<li><code>npm -v</code>来测试是否成功安装</li>
+<li>查看当前目录已安装插件：<code>npm list</code></li>
+<li>更新全部插件： <code>npm update [ --save-dev ]</code></li>
+<li>使用 npm 更新对应插件： <code>npm update &lt;name&gt; [ -g ] [ --save-dev]</code></li>
+<li>使用 npm 卸载插件： <code>npm uninstall &lt;name&gt; [ -g ] [ --save-dev ]</code></li>
+</ul>
+<h5 id="cnpm"><a href="#cnpm" class="headerlink" title="cnpm"></a>cnpm</h5><ul>
+<li>淘宝团队做的国内镜像，因为npm的服务器位于国外可能会影响安装。淘宝镜像与官方同步频率目前为 10分钟 一次以保证尽量与官方服务同步。</li>
+<li>安装：命令提示符执行<br><code>npm install cnpm -g --registry=https://registry.npm.taobao.org</code></li>
+<li><code>cnpm -v</code>来测试是否成功安装</li>
+</ul>
+<h5 id="通过改变地址来使用淘宝镜像"><a href="#通过改变地址来使用淘宝镜像" class="headerlink" title="通过改变地址来使用淘宝镜像"></a>通过改变地址来使用淘宝镜像</h5><ul>
+<li>npm的默认地址是<code>https://registry.npmjs.org/</code></li>
+<li>可以使用<code>npm config get registry</code>查看npm的仓库地址</li>
+<li>可以使用<code>npm config set registry https://registry.npm.taobao.org</code>来改变默认下载地址，达到可以不安装<code>cnpm</code>就能采用淘宝镜像的目的，然后使用上面的get命令查看是否成功。</li>
+</ul>
+<h5 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h5><ul>
+<li><p><code>nrm</code>包安装命令： <code>npm i nrm -g</code></p>
+</li>
+<li><p><code>nrm</code>能够管理所用可用的镜像源地址以及当前所使用的镜像源地址，但是只是单纯的提供了几个url并能够让我们在这几个地址之间方便切换</p>
+</li>
+<li><pre><code>nrm ls
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">即nrm list，查看所有可用的镜像，并可以切换。*号表示当前npm使用的地址，可以使用命令</span><br></pre></td></tr></table></figure>
+nrm use taobao
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">或</span><br></pre></td></tr></table></figure>
+nrm use npm</code></pre><p>来进行两者之间的切换。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="g-S-D"><a href="#g-S-D" class="headerlink" title="-g -S -D"></a>-g -S -D</h5><ul>
+<li><code>-g</code>：全局安装。 将会安装在C：\ Users \ Administrator \ AppData \ Roaming \ npm，<strong>并且写入系统环境变量</strong>；非全局安装：将会安装在当前定位目录;全局安装可以通过命令行任何地方调用它，本地安装将安装在定位目录的node_modules文件夹下，通过要求调用;<ul>
+<li><code>-S</code>：即<code>npm install module_name --save</code>,写入<code>package.json</code>的<code>dependencies</code>,<code>dependencies</code>是需要发布到生产环境的，比如jq，vue全家桶，ele-ui等ui框架这些项目运行时必须使用到的插件就需要放到<code>dependencies</code></li>
+</ul>
+</li>
+<li><code>-D</code>：即<code>npm install module_name --save-dev</code>,写入<code>package.json</code>的<code>devDependencies</code>,<code>devDependencies</code>里面的插件只用于开发环境，不用于生产环境。比如一些babel编译功能的插件、webpack打包插件就是开发时候的需要，真正程序打包跑起来并不需要的一些插件。</li>
+</ul>
+<blockquote>
+<p>为什么要保存在<code>package.json</code>因为node_module包实在是太大了。用一个配置文件保存，只打包安装对应配置文件的插件，按需导入。</p>
+</blockquote>
+<ol start="2">
+<li><p>node_module的存放位置</p>
+<p><img src="%E5%90%84%E7%A7%8D%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83.assets/image-20191116092903878.png" alt="image-20191116092903878"></p>
+</li>
+<li><p>node和npm的位置</p>
+<p><img src="%E5%90%84%E7%A7%8D%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83.assets/image-20191116092925273.png" alt="image-20191116092925273"></p>
+</li>
+<li><h3 id="taro小程序一统天下"><a href="#taro小程序一统天下" class="headerlink" title="taro小程序一统天下"></a>taro小程序一统天下</h3><ul>
+<li><p>安装</p>
+<p><img src="%E5%90%84%E7%A7%8D%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83.assets/image-20191116093129491.png" alt="image-20191116093129491"></p>
+</li>
+<li><p>新建taro项目   ———–新建一个taro文件夹打开终端 </p>
+<p><img src="%E5%90%84%E7%A7%8D%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83.assets/image-20191116094122096.png" alt="image-20191116094122096"></p>
+</li>
+<li><p>运行</p>
+<p><img src="%E5%90%84%E7%A7%8D%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83.assets/image-20191116094348703.png" alt="image-20191116094348703"></p>
+</li>
+<li><p>修改权限 index.js  —-修改端口</p>
+<blockquote>
+<p>sudo chmod -R 777 config</p>
+<p><img src="%E5%90%84%E7%A7%8D%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83.assets/image-20191116100428305.png" alt="image-20191116100428305"></p>
+</blockquote>
+</li>
+<li><p>切换超级用户</p>
+<blockquote>
+<p>sudo -s</p>
+</blockquote>
+</li>
+<li><p>s</p>
+</li>
+</ul>
+</li>
+<li><p>放大</p>
+</li>
+</ol>
+<h3 id="第二节"><a href="#第二节" class="headerlink" title="第二节"></a>第二节</h3><h3 id="第三节"><a href="#第三节" class="headerlink" title="第三节"></a>第三节</h3><h2 id="第一天-1"><a href="#第一天-1" class="headerlink" title="第一天"></a>第一天</h2><h3 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h3><h3 id="第二节-1"><a href="#第二节-1" class="headerlink" title="第二节"></a>第二节</h3><h3 id="第三节-1"><a href="#第三节-1" class="headerlink" title="第三节"></a>第三节</h3><h2 id=""><a href="#" class="headerlink" title=""></a></h2>
             </div>
             <hr/>
 
@@ -564,7 +658,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/movies/index.html">http://yoursite.com/movies/index.html</a>
+                    <a href="http://yoursite.com/2019/11/18/env/">http://yoursite.com/2019/11/18/env/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -601,7 +695,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E9%85%8D%E7%BD%AE/">
+                                    <span class="chip bg-color">配置</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -770,34 +868,46 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/movies/index.html">
+                <a href="/2019/11/18/env/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="movies">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="编程环境">
                         
-                        <span class="card-title">movies</span>
+                        <span class="card-title">编程环境</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            配置软件,原来这么简单!
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-18
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            fongyauching
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E9%85%8D%E7%BD%AE/" class="post-category">
+                                    配置
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%85%8D%E7%BD%AE/">
+                        <span class="chip bg-color">配置</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -805,37 +915,52 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/movies/index.html">
+                <a href="/2019/11/18/MacOS%E6%95%88%E7%8E%87%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="movies">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Mac软件">
                         
-                        <span class="card-title">movies</span>
+                        <span class="card-title">Mac软件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            一篇让你'欲罢不能'的软件资源文章
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-18
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            fongyauching
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%B5%84%E6%BA%90/" class="post-category">
+                                    资源
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%B5%84%E6%BA%90/">
+                        <span class="chip bg-color">资源</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
