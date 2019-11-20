@@ -34,7 +34,7 @@ paralllel tools的安装
     
     <script src="/libs/jquery/jquery.min.js"></script>
     
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -397,99 +397,10 @@ paralllel tools的安装
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        margin: 35px 0 15px 0;
-        padding-left: 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #toc-content .is-active-link::before {
-        background-color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -649,11 +560,9 @@ paralllel tools的安装
 </ul>
 </li>
 </ol>
-<pre><code>&gt; 3.
-&gt;
-&gt; 重新加载配置文件：【否则环境变量不会重新执行】
-&gt;
-&gt; source /etc/profile</code></pre><ul>
+<pre><code> &gt; 重新加载配置文件：【否则环境变量不会重新执行】
+ &gt;
+ &gt; source /etc/profile</code></pre><ul>
 <li><blockquote>
 <p>jdk的环境没问题 出现错误(docker 中的centos的jdk )</p>
 <p><img src="01.assets/image-20191026081238008.png" alt="image-20191026081238008"></p>
@@ -792,53 +701,53 @@ paralllel tools的安装
 </ol>
 </li>
 </ol>
-<pre><code>​    优点：①&lt;u&gt;数据之间有关系，&lt;/u&gt;进行数据的增删改查时非常方便的。
+<pre><code>  ​    优点：①&lt;u&gt;数据之间有关系，&lt;/u&gt;进行数据的增删改查时非常方便的。
 
-​          ②关系型数据库 有事务操作。 &lt;u&gt;保证数据的完整性&lt;/u&gt;
-
-
-
-​    缺点：1、因为数据和数据之间有关系的，&lt;u&gt;关系是由底层大量算法保证&lt;/u&gt;
-
-​                大量算法会&lt;u&gt;拉低系统运行速度&lt;/u&gt;
-
-​                大量算法&lt;u&gt;会消耗系统资源&lt;/u&gt;
-
-​          3、&lt;u&gt;甚至无法更改字段&lt;/u&gt;
-
-​                update product set cname = ‘手机数码’;//修改所有数据
-
-​                把商品表的cname字段，由varchar(64),  char(100)
+  ​          ②关系型数据库 有事务操作。 &lt;u&gt;保证数据的完整性&lt;/u&gt;
 
 
 
-​    适合处理一般量级数据，安全。
+  ​    缺点：1、因为数据和数据之间有关系的，&lt;u&gt;关系是由底层大量算法保证&lt;/u&gt;
+
+  ​                大量算法会&lt;u&gt;拉低系统运行速度&lt;/u&gt;
+
+  ​                大量算法&lt;u&gt;会消耗系统资源&lt;/u&gt;
+
+  ​          3、&lt;u&gt;甚至无法更改字段&lt;/u&gt;
+
+  ​                update product set cname = ‘手机数码’;//修改所有数据
+
+  ​                把商品表的cname字段，由varchar(64),  char(100)
 
 
 
-非关系型数据库（NOSQL）：
-
-​    &lt;u&gt;为了处理海量数据&lt;/u&gt;，(不会造成经济巨大的损失)
-
-​    Redis
-
-​    优点：1、海量数据的增删改查，非常轻松应对
-
-​          2、海量数据的维护非常轻松。
-
-​    缺点：1、&lt;u&gt;数据和数据之间没有关系，所以不能一目了然&lt;/u&gt;
-
-​          2、非关系型数据库，没有关系，&lt;u&gt;没有强大的事务保证数据的 完整和安全&lt;/u&gt;
+  ​    适合处理一般量级数据，安全。
 
 
 
-​    适合处理海量数据，效率。不一定安全
+  非关系型数据库（NOSQL）：
 
-​    奥运健儿奖牌总数
+  ​    &lt;u&gt;为了处理海量数据&lt;/u&gt;，(不会造成经济巨大的损失)
 
-&lt;u&gt;关系型数据库+非关系型数据库 ====》项目&lt;/u&gt;
+  ​    Redis
 
- &lt;u&gt;重要数据      海量操作数据，不重要&lt;/u&gt;</code></pre><ol start="2">
+  ​    优点：1、海量数据的增删改查，非常轻松应对
+
+  ​          2、海量数据的维护非常轻松。
+
+  ​    缺点：1、&lt;u&gt;数据和数据之间没有关系，所以不能一目了然&lt;/u&gt;
+
+  ​          2、非关系型数据库，没有关系，&lt;u&gt;没有强大的事务保证数据的 完整和安全&lt;/u&gt;
+
+
+
+  ​    适合处理海量数据，效率。不一定安全
+
+  ​    奥运健儿奖牌总数
+
+  &lt;u&gt;关系型数据库+非关系型数据库 ====》项目&lt;/u&gt;
+
+   &lt;u&gt;重要数据      海量操作数据，不重要&lt;/u&gt;</code></pre><ol start="2">
 <li><h4 id="使用环境redis"><a href="#使用环境redis" class="headerlink" title="使用环境redis"></a>使用环境redis</h4><p>Redis使用环境：</p>
 <p>1、关系型数据库的缓存存在</p>
 <p><img src="01.assets/image-20191017085815358.png" alt="image-20191017085815358"></p>
@@ -860,81 +769,81 @@ paralllel tools的安装
 </ol>
 </li>
 </ol>
-<pre><code>   - ​    步骤2：    编译redis (编译，将.c文件编译为.o文件)
+<pre><code>     - ​    步骤2：    编译redis (编译，将.c文件编译为.o文件)
 
-   &gt; 进入解压文件夹，cd redis-3.0.0
+     &gt; 进入解压文件夹，cd redis-3.0.0
 
-   &gt; ​    执行**make**
+     &gt; ​    执行**make**
 
-   Ps:如果没有安装gcc，编译将出现错误提示。（如果安装失败，必须删除文件夹，重写解压）    
+     Ps:如果没有安装gcc，编译将出现错误提示。（如果安装失败，必须删除文件夹，重写解压）    
 
-   - ​    步骤3：    安装
+     - ​    步骤3：    安装
 
-     &gt; make PREFIX=/usr/local/redis install 
+       &gt; make PREFIX=/usr/local/redis install 
 
-     &gt; 安装在/usr/local/redis目录下
+       &gt; 安装在/usr/local/redis目录下
 
 
 
-   - ​    步骤4：    安装完后，在/usr/local/redis/bin下有几个可执行文件
+     - ​    步骤4：    安装完后，在/usr/local/redis/bin下有几个可执行文件
 
-     ![image-20191017093140083](01.assets/image-20191017093140083.png)
+       ![image-20191017093140083](01.assets/image-20191017093140083.png)
 
-   - ​    步骤5：    redis启动需要一个配置文件redis.conf，可以改端口号等信息。
+     - ​    步骤5：    redis启动需要一个配置文件redis.conf，可以改端口号等信息。
 
-     &gt; cd  /home/f/bag/redis-3.0.0  (刚刚解压缩完的文件夹===编译的文件夹)
+       &gt; cd  /home/f/bag/redis-3.0.0  (刚刚解压缩完的文件夹===编译的文件夹)
+       &gt;
+       &gt; cp redis.conf /usr/local/redis
+       &gt;
+       &gt; 
+
+  3. redis server端启动成功
+
+     ![image-20191017093909654](01.assets/image-20191017093909654.png)
+
+  4. cli端启动成功
+
+     ![image-20191017094422413](01.assets/image-20191017094422413.png)
+
+     ![image-20191017094335904](01.assets/image-20191017094335904.png)
+
+  5. 如何机器在外网
+
+     &gt; 启动redis，客户端连接：默认 连接6379端口
      &gt;
-     &gt; cp redis.conf /usr/local/redis
-     &gt;
-     &gt; 
+     &gt; redis-cli -h ip地址 -p 端口 
 
-3. redis server端启动成功
+  6. ### 以上是前端的连接方式
 
-   ![image-20191017093909654](01.assets/image-20191017093909654.png)
+     缺点:-&lt;u&gt;无法部署集群&lt;/u&gt;----容错性差----一台挂全部挂
 
-4. cli端启动成功
+  7. 关闭redis-server
 
-   ![image-20191017094422413](01.assets/image-20191017094422413.png)
+     redis的关闭：
 
-   ![image-20191017094335904](01.assets/image-20191017094335904.png)
+     ①查询到PID,kill -9 pid  【断电，非正常关闭，一般不用，否则造成数据丢失】
 
-5. 如何机器在外网
+     ②正常关闭  【正常关闭，数据保存】
 
-   &gt; 启动redis，客户端连接：默认 连接6379端口
-   &gt;
-   &gt; redis-cli -h ip地址 -p 端口 
+     **./bin/redis-cli shutdown**
 
-6. ### 以上是前端的连接方式
+  8. 后端模式
 
-   缺点:-&lt;u&gt;无法部署集群&lt;/u&gt;----容错性差----一台挂全部挂
+     - 改usr/local/redis/redis.conf    线程保护开启
 
-7. 关闭redis-server
+       ![image-20191017095906373](01.assets/image-20191017095906373.png)
 
-   redis的关闭：
+     - 启动时，指定配置文件
 
-   ①查询到PID,kill -9 pid  【断电，非正常关闭，一般不用，否则造成数据丢失】
+     - &gt; cd /usr/local/redis/
+       &gt;
+       &gt; ./bin/redis-server ./redis.conf
 
-   ②正常关闭  【正常关闭，数据保存】
+       ![image-20191017100459149](01.assets/image-20191017100459149.png)
 
-   **./bin/redis-cli shutdown**
+     - 
 
-8. 后端模式
-
-   - 改usr/local/redis/redis.conf    线程保护开启
-
-     ![image-20191017095906373](01.assets/image-20191017095906373.png)
-
-   - 启动时，指定配置文件
-
-   - &gt; cd /usr/local/redis/
-     &gt;
-     &gt; ./bin/redis-server ./redis.conf
-
-     ![image-20191017100459149](01.assets/image-20191017100459149.png)
-
-   - 
-
-9. </code></pre><ol start="4">
+  9. </code></pre><ol start="4">
 <li><h3 id="redis的key-value-map"><a href="#redis的key-value-map" class="headerlink" title="redis的key-value (map)"></a>redis的key-value (map)</h3><ol>
 <li><blockquote>
 <p>key:全部都是字符串</p>
@@ -947,7 +856,7 @@ paralllel tools的安装
 </ol>
 </li>
 </ol>
-<pre><code>Key名不要太短，最好是有意义。</code></pre><ol start="7">
+<pre><code>     Key名不要太短，最好是有意义。</code></pre><ol start="7">
 <li><p>mysql root 123456</p>
 </li>
 <li><p><img src="01.assets/image-20191016181502903.png" alt="image-20191016181502903"></p>
@@ -1064,27 +973,27 @@ paralllel tools的安装
 </ol>
 </li>
 </ol>
-<pre><code>![image-20191017122127057](01.assets/image-20191017122127057.png)
+<pre><code>  ![image-20191017122127057](01.assets/image-20191017122127057.png)
 
-![image-20191017122202067](01.assets/image-20191017122202067.png)
+  ![image-20191017122202067](01.assets/image-20191017122202067.png)
 
-赋值：
+  赋值：
 
-- hset key field value：为指定的key设定field/value对（键值对）。
-- **hmset key field value [field2 value2 …]**：设置key中的多个filed/value
-
-
-
-取值：
-
-- hmget key filed1 filed2 ….：获取key中的多个filed的值
-- hgetall key：获取key中的所有filed-vaule
+  - hset key field value：为指定的key设定field/value对（键值对）。
+  - **hmset key field value [field2 value2 …]**：设置key中的多个filed/value
 
 
 
-删除：
+  取值：
 
-- **del key** ：删除整个hash</code></pre><ol start="2">
+  - hmget key filed1 filed2 ….：获取key中的多个filed的值
+  - hgetall key：获取key中的所有filed-vaule
+
+
+
+  删除：
+
+  - **del key** ：删除整个hash</code></pre><ol start="2">
 <li><blockquote>
 <p>hincrby hash1 age 10</p>
 <p>​               key     field  increment</p>
@@ -1439,48 +1348,22 @@ minimal的centos6.5报错,应该跟网络有关
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/18/redis+linux/02/">
+                <a href="/2019/11/18/redis+linux/03/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="redis+linux/02">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="redis+linux/03">
                         
-                        <span class="card-title">redis+linux/02</span>
+                        <span class="card-title">redis+linux/03</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-Logo
-首页
-
-文章
-
-关注
-
-订阅专栏
-
-网站导航
-
-注册
-
-登录
-
-手机阅读
-
-搜索
-
-写文章
-
-
-在线客服
-原创
-centOS6.6安装图解
-寻丶0人评论2061人阅读
-centOS6.6安装图解
-操作系统：CentOS 6.6
+                            redis03第一天第一节(redis常用命令)
+数组和链表的选择
+Java List ：  数组ArrayList   优点:访问快  缺点:存储慢
+​                    链表LinkedList  优点:访问慢  缺
                         
                     </div>
                     <div class="publish-info">
@@ -1542,104 +1425,6 @@ centOS6.6安装图解
 
 <!-- 代码块折行 -->
 
-<style type="text/css">
-code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
-</style>
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            // headingsOffset: -205,
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
     
 
 </main>
@@ -1657,7 +1442,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">9.8k</span>&nbsp;字
+                class="white-color">9.9k</span>&nbsp;字
             
             
             

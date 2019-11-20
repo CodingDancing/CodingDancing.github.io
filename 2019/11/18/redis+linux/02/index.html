@@ -5,36 +5,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="redis+linux/02, fong">
-    <meta name="description" content="
-
-Logo
-首页
-
-文章
-
-关注
-
-订阅专栏
-
-网站导航
-
-注册
-
-登录
-
-手机阅读
-
-搜索
-
-写文章
-
-
-在线客服
-原创
-centOS6.6安装图解
-寻丶0人评论2061人阅读
-centOS6.6安装图解
-操作系统：CentOS 6.6">
+    <meta name="description" content="备注：
+CentOS 6.6系统镜像有32位和64位两个版本，这里提供DVD版的。
+4G内存以上使用x86_64位的系统。
+附：CentOS 6.6下载地址
+32位DVD版本：
+http://vault.centos.org/6.6/iso">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -55,7 +31,7 @@ centOS6.6安装图解
     
     <script src="/libs/jquery/jquery.min.js"></script>
     
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -418,99 +394,10 @@ centOS6.6安装图解
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        margin: 35px 0 15px 0;
-        padding-left: 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #toc-content .is-active-link::before {
-        background-color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -562,14 +449,14 @@ centOS6.6安装图解
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.8k
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    5 分
                 </div>
                 
 				
@@ -585,40 +472,7 @@ centOS6.6安装图解
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://static1.51cto.com/edu/blog/mobile/images/share_default.jpg" alt="img"></p>
-<p><a href="https://blog.51cto.com/cloumn/composedetail?id=10" target="_blank" rel="noopener"><img src="https://s1.51cto.com/images/blog/201909/25/d719de91a7fb563b57d8206dbd3ded7b.jpg" alt="img"></a></p>
-<h1 id="Logo"><a href="#Logo" class="headerlink" title="Logo"></a><a href="https://blog.51cto.com/" target="_blank" rel="noopener">Logo</a></h1><ul>
-<li><p><a href="https://blog.51cto.com/" target="_blank" rel="noopener">首页</a></p>
-</li>
-<li><p><a href="https://blog.51cto.com/original" target="_blank" rel="noopener">文章</a></p>
-</li>
-<li><p><a href="https://blog.51cto.com/blog/follow" target="_blank" rel="noopener">关注</a></p>
-</li>
-<li><p><a href="https://blog.51cto.com/cloumn/index" target="_blank" rel="noopener">订阅专栏</a></p>
-</li>
-<li><p>网站导航</p>
-</li>
-<li><p><a href="https://blog.51cto.com/site/login?reback=https%3A%2F%2Fblog.51cto.com%2F1200400cy%2F1982307&logintype=reg" target="_blank" rel="noopener">注册</a></p>
-</li>
-<li><p><a href="https://blog.51cto.com/site/login?reback=https%3A%2F%2Fblog.51cto.com%2F1200400cy%2F1982307" target="_blank" rel="noopener">登录</a></p>
-</li>
-<li><p>手机阅读</p>
-</li>
-<li><p><a href="https://blog.51cto.com/search/index" target="_blank" rel="noopener">搜索</a></p>
-</li>
-<li><p>写文章</p>
-</li>
-</ul>
-<p>在线<br>客服</p>
-<p>原创</p>
-<h1 id="centOS6-6安装图解"><a href="#centOS6-6安装图解" class="headerlink" title="centOS6.6安装图解"></a>centOS6.6安装图解</h1><p><a href="https://blog.51cto.com/1200400cy" target="_blank" rel="noopener"><img src="https://ucenter.51cto.com/images/noavatar_middle.gif" alt="img"></a></p>
-<p><a href="https://blog.51cto.com/1200400cy" target="_blank" rel="noopener">寻丶</a>0人评论2061人阅读</p>
-<p><strong>centOS6.6安装图解</strong></p>
-<p>操作系统：CentOS 6.6 64位</p>
-<p>IP地址：192.168.1.31</p>
-<p>网关：192.168.1.1</p>
-<p>DNS：192.168.1.1 114.114.114.114</p>
-<p><strong>备注：</strong></p>
+                <p><strong>备注：</strong></p>
 <p>CentOS 6.6系统镜像有32位和64位两个版本，这里提供DVD版的。</p>
 <p>4G内存以上使用x86_64位的系统。</p>
 <p><strong>附：CentOS 6.6下载地址</strong></p>
@@ -643,35 +497,35 @@ centOS6.6安装图解
 <p>Memory test                                                   内存检测</p>
 <p>​         </p>
 <p>​            这里选择第一项，安装或升级现有的系统，回车。  </p>
-<p><img src="https://s4.51cto.com/oss/201711/15/102e6cb0befb207afa1fed134f97dece.png-wh_500x0-wm_3-wmp_4-s_159796117.png" alt="102e6cb0befb207afa1fed134f97dece.png-wh_"></p>
+<p><img src="02.assets/102e6cb0befb207afa1fed134f97dece.png-wh_500x0-wm_3-wmp_4-s_159796117.png" alt="102e6cb0befb207afa1fed134f97dece.png-wh_"></p>
 <p>  出现是否对CD媒体进行测试的提问，这里选择“Skip”跳过测试（方向键控制移动）。 </p>
-<p>​     <img src="https://s4.51cto.com/oss/201711/15/2d6121c5435cd2e158a7e52121b36490.png-wh_500x0-wm_3-wmp_4-s_4231193953.png" alt="2d6121c5435cd2e158a7e52121b36490.png-wh_"></p>
+<p>​     <img src="02.assets/2d6121c5435cd2e158a7e52121b36490.png-wh_500x0-wm_3-wmp_4-s_4231193953.png" alt="2d6121c5435cd2e158a7e52121b36490.png-wh_"></p>
 <p>  出现下面的界面，Next下一步</p>
-<p>​    <img src="https://s4.51cto.com/oss/201711/15/5a7064b9f03b90a95b65cffb7cfaa737.png-wh_500x0-wm_3-wmp_4-s_3329375341.png" alt="5a7064b9f03b90a95b65cffb7cfaa737.png-wh_"></p>
+<p>​    <img src="02.assets/5a7064b9f03b90a95b65cffb7cfaa737.png-wh_500x0-wm_3-wmp_4-s_3329375341.png" alt="5a7064b9f03b90a95b65cffb7cfaa737.png-wh_"></p>
 <p>​    </p>
 <p>​    </p>
 <p>​        选择语言为：English（English） #生产服务器建议安装英文版本</p>
-<p>​     <img src="https://s2.51cto.com/oss/201711/15/ce5ee48433109837d263a7ab9f0586c1.png-wh_500x0-wm_3-wmp_4-s_245800550.png" alt="ce5ee48433109837d263a7ab9f0586c1.png-wh_"></p>
+<p>​     <img src="02.assets/ce5ee48433109837d263a7ab9f0586c1.png-wh_500x0-wm_3-wmp_4-s_245800550.png" alt="ce5ee48433109837d263a7ab9f0586c1.png-wh_"></p>
 <p>​        键盘选择为：U.S.English</p>
-<p>​    <img src="https://s2.51cto.com/oss/201711/15/f3551ff57799536f97f11a542dc84c36.png-wh_500x0-wm_3-wmp_4-s_2842500997.png" alt="f3551ff57799536f97f11a542dc84c36.png-wh_"></p>
+<p>​    <img src="02.assets/f3551ff57799536f97f11a542dc84c36.png-wh_500x0-wm_3-wmp_4-s_2842500997.png" alt="f3551ff57799536f97f11a542dc84c36.png-wh_"></p>
 <p>​        </p>
 <p>​        选择第一项，基本存储设备，下一步</p>
-<p>​        <img src="https://s2.51cto.com/oss/201711/15/4abe4f23b3e5e36cc074e3cb0118ab65.png-wh_500x0-wm_3-wmp_4-s_2660582387.png" alt="4abe4f23b3e5e36cc074e3cb0118ab65.png-wh_"></p>
+<p>​        <img src="02.assets/4abe4f23b3e5e36cc074e3cb0118ab65.png-wh_500x0-wm_3-wmp_4-s_2660582387.png" alt="4abe4f23b3e5e36cc074e3cb0118ab65.png-wh_"></p>
 <p>​    </p>
 <p>​            </p>
 <p>​            格式化，选择第一项：Yes，忽略所有数据</p>
-<p>​    <img src="https://s1.51cto.com/oss/201711/15/3f29f62b012cbc6d82c7d08d2ff8e92d.png-wh_500x0-wm_3-wmp_4-s_3430188651.png" alt="3f29f62b012cbc6d82c7d08d2ff8e92d.png-wh_"></p>
+<p>​    <img src="02.assets/3f29f62b012cbc6d82c7d08d2ff8e92d.png-wh_500x0-wm_3-wmp_4-s_3430188651.png" alt="3f29f62b012cbc6d82c7d08d2ff8e92d.png-wh_"></p>
 <p>​    </p>
 <p>​        设置主机名，这里默认即可，安装完成之后可以再修改</p>
 <p>​        下一步</p>
-<p>​        <img src="https://s1.51cto.com/oss/201711/15/7d5a05142c93d236741d0791dd6a6478.png-wh_500x0-wm_3-wmp_4-s_2986321821.png" alt="7d5a05142c93d236741d0791dd6a6478.png-wh_"></p>
+<p>​        <img src="02.assets/7d5a05142c93d236741d0791dd6a6478.png-wh_500x0-wm_3-wmp_4-s_2986321821.png" alt="7d5a05142c93d236741d0791dd6a6478.png-wh_"></p>
 <p>​    </p>
 <p>​    </p>
 <p>​            时区选择：Asia/Shanghai”System clock user UTC”  #取消前面打勾，不使用UTC时间   </p>
-<p>​    <img src="https://s1.51cto.com/oss/201711/15/10de42c2ff02606346b776f31efc81ee.png-wh_500x0-wm_3-wmp_4-s_2099678037.png" alt="10de42c2ff02606346b776f31efc81ee.png-wh_"></p>
+<p>​    <img src="02.assets/10de42c2ff02606346b776f31efc81ee.png-wh_500x0-wm_3-wmp_4-s_2099678037.png" alt="10de42c2ff02606346b776f31efc81ee.png-wh_"></p>
 <p>​            设置root密码</p>
 <p>​    注意：如果你使用的密码过于简单，系统会自动提示：您的密码不够安全，过于简单化/系统化，选择“Use                 Anyway” 无论如何都使用。</p>
-<p>​    <img src="https://s3.51cto.com/oss/201711/15/6892925492595d0c17d671e1f64c8eb9.png-wh_500x0-wm_3-wmp_4-s_724407399.png" alt="6892925492595d0c17d671e1f64c8eb9.png-wh_"></p>
+<p>​    <img src="02.assets/6892925492595d0c17d671e1f64c8eb9.png-wh_500x0-wm_3-wmp_4-s_724407399.png" alt="6892925492595d0c17d671e1f64c8eb9.png-wh_"></p>
 <p>​      选择最后一项，Create Custom Layout 创建自定义分区 </p>
 <p>​            <strong>使用说明：</strong></p>
 <p>​            which type of installation would you like？            你选择哪种类型的安装？</p>
@@ -680,19 +534,19 @@ centOS6.6安装图解
 <p>​            Shrink Current System                                          缩小现有系统（缩小现有分区以便默认布局生存剩余空间）</p>
 <p>​            Use Free space                                                      使用剩余空间（保留现有分区数据且只使用设备中未分区空间）</p>
 <p>​            Create Custom Layout                                           使用自定义分区</p>
-<p>​    <img src="https://s3.51cto.com/oss/201711/15/a1f04d258416ab7e376984a8b99b5b1e.png-wh_500x0-wm_3-wmp_4-s_4263753164.png" alt="a1f04d258416ab7e376984a8b99b5b1e.png-wh_"></p>
+<p>​    <img src="02.assets/a1f04d258416ab7e376984a8b99b5b1e.png-wh_500x0-wm_3-wmp_4-s_4263753164.png" alt="a1f04d258416ab7e376984a8b99b5b1e.png-wh_"></p>
 <p>​    </p>
 <p>​            可以看到硬盘的容量，我这里显示的是20G，现在自定义分区</p>
-<p>​    <img src="https://s3.51cto.com/oss/201711/15/895d81ff264f3676b60a725b7485c77b.png-wh_500x0-wm_3-wmp_4-s_564846311.png" alt="895d81ff264f3676b60a725b7485c77b.png-wh_"></p>
+<p>​    <img src="02.assets/895d81ff264f3676b60a725b7485c77b.png-wh_500x0-wm_3-wmp_4-s_564846311.png" alt="895d81ff264f3676b60a725b7485c77b.png-wh_"></p>
 <p>​      选中空闲分区Free，点创建Create</p>
 <p>​    选择标准分区Standard Partition，点创建Create</p>
-<p>​    <img src="https://s2.51cto.com/oss/201711/15/a346bc8a7fdcf5576c6d6827550d8907.png-wh_500x0-wm_3-wmp_4-s_3620526221.png" alt="a346bc8a7fdcf5576c6d6827550d8907.png-wh_"></p>
+<p>​    <img src="02.assets/a346bc8a7fdcf5576c6d6827550d8907.png-wh_500x0-wm_3-wmp_4-s_3620526221.png" alt="a346bc8a7fdcf5576c6d6827550d8907.png-wh_"></p>
 <p>​    </p>
 <p>​    文件系统类型：swap（虚拟内存）</p>
 <p>​    设置大小Size：2048（内存小于2G时，设置为内存的2倍；内存大于或等于2G时，设置为2G）</p>
 <p>​    其他选项默认即可</p>
 <p>​    确定 OK</p>
-<p>​    <img src="https://s5.51cto.com/oss/201711/15/2f80c2ba2cf5977e649942db2dcf0956.png-wh_500x0-wm_3-wmp_4-s_3246918859.png" alt="2f80c2ba2cf5977e649942db2dcf0956.png-wh_"></p>
+<p>​    <img src="02.assets/2f80c2ba2cf5977e649942db2dcf0956.png-wh_500x0-wm_3-wmp_4-s_3246918859.png" alt="2f80c2ba2cf5977e649942db2dcf0956.png-wh_"></p>
 <p>​    </p>
 <p>​            继续选中空闲分区Free，点创建Create</p>
 <p>​    选择标准分区Standard Partition，点创建Create</p>
@@ -702,84 +556,52 @@ centOS6.6安装图解
 <p>​    其他选项默认即可</p>
 <p>​    确定 OK</p>
 <p>​    注意：生产环境建议单独划分一个date数据区，保证安全。</p>
-<p>​    <img src="https://s2.51cto.com/oss/201711/15/d24401a8b90763d433f91f06c181c36d.png-wh_500x0-wm_3-wmp_4-s_172483787.png" alt="d24401a8b90763d433f91f06c181c36d.png-wh_"></p>
+<p>​    <img src="02.assets/d24401a8b90763d433f91f06c181c36d.png-wh_500x0-wm_3-wmp_4-s_172483787.png" alt="d24401a8b90763d433f91f06c181c36d.png-wh_"></p>
 <p>​    </p>
 <p>​    创建好分区之后，如下图所示，然后点Next</p>
-<p>​    <img src="https://s2.51cto.com/oss/201711/15/4c8d151b7f55b9d4f6e8de18b820ff90.png-wh_500x0-wm_3-wmp_4-s_1571184674.png" alt="4c8d151b7f55b9d4f6e8de18b820ff90.png-wh_"></p>
+<p>​    <img src="02.assets/4c8d151b7f55b9d4f6e8de18b820ff90.png-wh_500x0-wm_3-wmp_4-s_1571184674.png" alt="4c8d151b7f55b9d4f6e8de18b820ff90.png-wh_"></p>
 <p>​    </p>
 <p>​    点“Format”格式化</p>
-<p>​    <img src="https://s5.51cto.com/oss/201711/15/6947856bfcd88339cfc1383719e2f002.png-wh_500x0-wm_3-wmp_4-s_3798969153.png" alt="6947856bfcd88339cfc1383719e2f002.png-wh_"></p>
+<p>​    <img src="02.assets/6947856bfcd88339cfc1383719e2f002.png-wh_500x0-wm_3-wmp_4-s_3798969153.png" alt="6947856bfcd88339cfc1383719e2f002.png-wh_"></p>
 <p>​    </p>
 <p>选择“Write changes to disk”将修改写入磁盘</p>
-<p>​    <img src="https://s5.51cto.com/oss/201711/15/ee3395f246fb7a5bcd05dc1d578c0b82.png-wh_500x0-wm_3-wmp_4-s_2096063772.png" alt="ee3395f246fb7a5bcd05dc1d578c0b82.png-wh_"></p>
+<p>​    <img src="02.assets/ee3395f246fb7a5bcd05dc1d578c0b82.png-wh_500x0-wm_3-wmp_4-s_2096063772.png" alt="ee3395f246fb7a5bcd05dc1d578c0b82.png-wh_"></p>
 <p>​    </p>
 <p>​        保持默认 Next</p>
-<p>​    <img src="https://s5.51cto.com/oss/201711/15/0047efb0b11a126233a859c03550abaf.png-wh_500x0-wm_3-wmp_4-s_1271057025.png" alt="0047efb0b11a126233a859c03550abaf.png-wh_"></p>
+<p>​    <img src="02.assets/0047efb0b11a126233a859c03550abaf.png-wh_500x0-wm_3-wmp_4-s_1271057025.png" alt="0047efb0b11a126233a859c03550abaf.png-wh_"></p>
 <p>​    </p>
 <p>​            选择Minimal（生产环境）</p>
-<p>​    <img src="https://s5.51cto.com/oss/201711/15/6ffbf0fd57d60ff687c2a52cdc17beb8.png-wh_500x0-wm_3-wmp_4-s_1512663311.png" alt="6ffbf0fd57d60ff687c2a52cdc17beb8.png-wh_"></p>
+<p>​    <img src="02.assets/6ffbf0fd57d60ff687c2a52cdc17beb8.png-wh_500x0-wm_3-wmp_4-s_1512663311.png" alt="6ffbf0fd57d60ff687c2a52cdc17beb8.png-wh_"></p>
 <p>​    </p>
 <p>​        开始安装</p>
-<p>​    <img src="https://s5.51cto.com/oss/201711/15/ce6732990c18aff5afa372f622c0982c.png-wh_500x0-wm_3-wmp_4-s_3387045203.png" alt="ce6732990c18aff5afa372f622c0982c.png-wh_"></p>
+<p>​    <img src="02.assets/ce6732990c18aff5afa372f622c0982c.png-wh_500x0-wm_3-wmp_4-s_3387045203.png" alt="ce6732990c18aff5afa372f622c0982c.png-wh_"></p>
 <p>​    </p>
-<p>​    <img src="https://s1.51cto.com/oss/201711/15/dff4e4cfd9fe6c3d023436b69f8404bd.png-wh_500x0-wm_3-wmp_4-s_2967152460.png" alt="dff4e4cfd9fe6c3d023436b69f8404bd.png-wh_"></p>
+<p>​    <img src="02.assets/dff4e4cfd9fe6c3d023436b69f8404bd.png-wh_500x0-wm_3-wmp_4-s_2967152460.png" alt="dff4e4cfd9fe6c3d023436b69f8404bd.png-wh_"></p>
 <p>​    </p>
 <p>​        安装完成，点“Reboot”重新引导，系统自动重启</p>
 <p>​        重启之后，出现下面登录界面</p>
-<p>​    <img src="https://s1.51cto.com/oss/201711/15/14afd46cb926884a41d2ffaba9a6614c.png-wh_500x0-wm_3-wmp_4-s_3213121965.png" alt="14afd46cb926884a41d2ffaba9a6614c.png-wh_"></p>
+<p>​    <img src="02.assets/14afd46cb926884a41d2ffaba9a6614c.png-wh_500x0-wm_3-wmp_4-s_3213121965.png" alt="14afd46cb926884a41d2ffaba9a6614c.png-wh_"></p>
 <p>​    </p>
 <p>​        输入账号root和密码（输入密码的时候是不显示的），</p>
-<p>​    <img src="https://s1.51cto.com/oss/201711/15/751ca17681e210994589c54c82786d0d.png-wh_500x0-wm_3-wmp_4-s_111667335.png" alt="751ca17681e210994589c54c82786d0d.png-wh_"></p>
+<p>​    <img src="02.assets/751ca17681e210994589c54c82786d0d.png-wh_500x0-wm_3-wmp_4-s_111667335.png" alt="751ca17681e210994589c54c82786d0d.png-wh_"></p>
 <p>​    </p>
 <p>​        成功登录系统   如下图 </p>
-<p>​    <img src="https://s2.51cto.com/oss/201711/16/34934de8c2328c74ee49019a440f681f.png-wh_500x0-wm_3-wmp_4-s_175897711.png" alt="34934de8c2328c74ee49019a440f681f.png-wh_"></p>
+<p>​    <img src="02.assets/34934de8c2328c74ee49019a440f681f.png-wh_500x0-wm_3-wmp_4-s_175897711.png" alt="34934de8c2328c74ee49019a440f681f.png-wh_"></p>
 <p>​    <strong>说明：CentOS 6.6默认安装好之后是没有自动开启网络连接的！</strong></p>
 <p>​    修改IP地址<br>​    修改/etc/sysconfig/network-scripts/ifcfg-eth0文件，如果有多张网卡，则修改相应的网卡<br>​        # vi /etc/sysconfig/network-scripts/ifcfg-eth0</p>
 <p>​    按i进入编辑模式<br>​        DEVICE=eth0                             #网卡对应的设备别名<br>​        BOOTPROTO=static                   #网卡获得ip地址的方式（默认为dhcp，表示自动获取）<br>​        HWADDR=00:0C:29:58:DB:71    #网卡MAC地址（物理地址）<br>​        IPADDR=192.168.1.31         #IP地址<br>​        NETMASK=255.255.255.0          #子网掩码<br>​        ONBOOT=yes                             #系统启动时是否激活此设备</p>
 <p>​    按ESC键退出，并输入:wq!（w保存，q退出，!强制退出）</p>
-<pre><code>   修改网关地址:
-修改/etc/sysconfig/network文件
-    \# vi /etc/sysconfig/network
-   NETWORKING=yes                #表示系统是否使用网络，no表示不能使用网络
-   HOSTNAME=doiido                #设置本机的主机名，要和/etc/hosts中设置的主机名相同（#hostname  ）
-   GATEWAY=192.168.1.1      #设置网关的IP地址(设置你自己的网关)</code></pre><p>​    这个时候已经可以ping通IP地址，但是还无法ping通域名，因此需要修改DNS</p>
+<pre><code>    修改网关地址:
+ 修改/etc/sysconfig/network文件
+     \# vi /etc/sysconfig/network
+    NETWORKING=yes                #表示系统是否使用网络，no表示不能使用网络
+    HOSTNAME=doiido                #设置本机的主机名，要和/etc/hosts中设置的主机名相同（#hostname  ）
+    GATEWAY=192.168.1.1      #设置网关的IP地址(设置你自己的网关)</code></pre><p>​    这个时候已经可以ping通IP地址，但是还无法ping通域名，因此需要修改DNS</p>
 <p>​        修改DNS:<br>​     修改/etc/resolv.conf文件<br>​        # vi /etc/resolv.conf<br>​        nameserver 192.168.1.1                   #我路由器默认的<br>​        nameserver 114.144.114.114               #国内域名服务器</p>
 <p>​     重启网卡:<br>​        # service network restart<br>​     正在关闭接口eth0：[确定]<br>​     关闭环回接口：[确定]<br>​     弹出环回接口：[确定]<br>​     弹出界面 eth0： [确定]</p>
 <p>​    这个时候，系统就可以正常的上网了</p>
 <p>#注：其实网关地址和DNS也是可以写在ifcfg-eth0中，但是为了规范起见，将他们分开写.</p>
 <p>​    ping 114.114.114.114</p>
-<p>​    <a href="https://s3.51cto.com/oss/201711/16/415f322eb4ebd82d5d6a3f974f269968.png-wh_500x0-wm_3-wmp_4-s_4001219146.png" target="_blank" rel="noopener"><img src="https://s3.51cto.com/oss/201711/16/415f322eb4ebd82d5d6a3f974f269968.png-wh_500x0-wm_3-wmp_4-s_4001219146.png" alt="415f322eb4ebd82d5d6a3f974f269968.png-wh_"></a></p>
-<p>​    </p>
-<p>​    </p>
-<p>​    可以正常上网了（ctrl+c停止ping）</p>
-<p>©著作权归作者所有：来自51CTO博客作者寻丶的原创作品，如需转载，请注明出处，否则将追究法律责任</p>
-<p><a href="https://blog.51cto.com/search/result?q=linux" target="_blank" rel="noopener">linux</a><a href="https://blog.51cto.com/1200400cy/category0.html" target="_blank" rel="noopener">linux学习之路</a></p>
-<p>0</p>
-<p>分享</p>
-<p>收藏</p>
-<p><a href="https://blog.51cto.com/1200400cy" target="_blank" rel="noopener"><img src="https://ucenter.51cto.com/images/noavatar_middle.gif" alt="img"></a></p>
-<p><a href="https://blog.51cto.com/1200400cy" target="_blank" rel="noopener">寻丶</a></p>
-<h3 id="1篇文章，2W-人气，0粉丝"><a href="#1篇文章，2W-人气，0粉丝" class="headerlink" title="1篇文章，2W+人气，0粉丝"></a>1篇文章，2W+人气，0粉丝</h3><p><a href="https://blog.51cto.com/1200400cy" target="_blank" rel="noopener"><img src="https://ucenter.51cto.com/images/noavatar_middle.gif" alt="img"></a></p>
-<p>Ctrl+Enter 发布</p>
-<p>发布</p>
-<p>取消</p>
-<h2 id="推荐专栏更多"><a href="#推荐专栏更多" class="headerlink" title="推荐专栏更多"></a>推荐专栏<a href="https://blog.51cto.com/cloumn/index?utm_source=p" target="_blank" rel="noopener">更多</a></h2><p><a href="https://blog.51cto.com/cloumn/detail/18" target="_blank" rel="noopener"><img src="https://s1.51cto.com/images/blog/201808/20/45862f289339dc922ffda669fd74ad9b.jpg" alt="img"></a></p>
-<p><a href="https://blog.51cto.com/cloumn/detail/18" target="_blank" rel="noopener">网工2.0晋级攻略 ——零基础入门Python/Ansible</a></p>
-<h3 id="网络工程师2-0进阶指南"><a href="#网络工程师2-0进阶指南" class="headerlink" title="网络工程师2.0进阶指南"></a>网络工程师2.0进阶指南</h3><h4 id="共30章-姜汁啤酒"><a href="#共30章-姜汁啤酒" class="headerlink" title="共30章 | 姜汁啤酒"></a>共30章 | <a href="https://blog.51cto.com/gingerbeer" target="_blank" rel="noopener">姜汁啤酒</a></h4><h5 id="￥51-00-1795人订阅"><a href="#￥51-00-1795人订阅" class="headerlink" title="￥51.00 1795人订阅"></a>￥51.00 1795人订阅</h5><p><a href="https://blog.51cto.com/cloumn/detail/18" target="_blank" rel="noopener">订   阅</a></p>
-<p><a href="https://blog.51cto.com/cloumn/detail/30" target="_blank" rel="noopener"><img src="https://s1.51cto.com/images/blog/201811/06/5353379fc95da1d7d34fd243b9ace17f.jpg" alt="img"></a></p>
-<p><a href="https://blog.51cto.com/cloumn/detail/30" target="_blank" rel="noopener">全局视角看大型园区网</a></p>
-<h3 id="路由交换-安全-无线-优化-运维"><a href="#路由交换-安全-无线-优化-运维" class="headerlink" title="路由交换+安全+无线+优化+运维"></a>路由交换+安全+无线+优化+运维</h3><h4 id="共40章-51CTOsummer"><a href="#共40章-51CTOsummer" class="headerlink" title="共40章 | 51CTOsummer"></a>共40章 | <a href="https://blog.51cto.com/weilan2222" target="_blank" rel="noopener">51CTOsummer</a></h4><h5 id="￥51-00-2029人订阅"><a href="#￥51-00-2029人订阅" class="headerlink" title="￥51.00 2029人订阅"></a>￥51.00 2029人订阅</h5><p><a href="https://blog.51cto.com/cloumn/detail/30" target="_blank" rel="noopener">订   阅</a></p>
-<p><a href="https://blog.51cto.com/cloumn/detail/5" target="_blank" rel="noopener"><img src="https://s1.51cto.com/images/blog/201804/27/dc6736c5fd50474b5df8b76b040e3d03.jpg" alt="img"></a></p>
-<p><a href="https://blog.51cto.com/cloumn/detail/5" target="_blank" rel="noopener">带你玩转高可用</a></p>
-<h3 id="前百度高级工程师的架构高可用实战"><a href="#前百度高级工程师的架构高可用实战" class="headerlink" title="前百度高级工程师的架构高可用实战"></a>前百度高级工程师的架构高可用实战</h3><h4 id="共15章-曹林华"><a href="#共15章-曹林华" class="headerlink" title="共15章 | 曹林华"></a>共15章 | <a href="https://blog.51cto.com/13527416" target="_blank" rel="noopener">曹林华</a></h4><h5 id="￥51-00-488人订阅"><a href="#￥51-00-488人订阅" class="headerlink" title="￥51.00 488人订阅"></a>￥51.00 488人订阅</h5><p><a href="https://blog.51cto.com/cloumn/detail/5" target="_blank" rel="noopener">订   阅</a></p>
-<p><a href="https://blog.51cto.com/cloumn/detail/13" target="_blank" rel="noopener"><img src="https://s1.51cto.com/images/blog/201808/03/a940c66317ecbe58436a2ad3831c2d7d.png" alt="img"></a></p>
-<p><a href="https://blog.51cto.com/cloumn/detail/13" target="_blank" rel="noopener">基于Python的DevOps实战</a></p>
-<h3 id="自动化运维开发新概念"><a href="#自动化运维开发新概念" class="headerlink" title="自动化运维开发新概念"></a>自动化运维开发新概念</h3><h4 id="共20章-抚琴煮酒"><a href="#共20章-抚琴煮酒" class="headerlink" title="共20章 | 抚琴煮酒"></a>共20章 | <a href="https://blog.51cto.com/yuhongchun" target="_blank" rel="noopener">抚琴煮酒</a></h4><h5 id="￥51-00-474人订阅"><a href="#￥51-00-474人订阅" class="headerlink" title="￥51.00 474人订阅"></a>￥51.00 474人订阅</h5><p><a href="https://blog.51cto.com/cloumn/detail/13" target="_blank" rel="noopener">订   阅</a></p>
-<p><a href="https://blog.51cto.com/cloumn/detail/6" target="_blank" rel="noopener"><img src="https://s1.51cto.com/images/blog/201811/28/629650e188ddde78b213e564c2e9ebff.jpg" alt="img"></a></p>
-<p><a href="https://blog.51cto.com/cloumn/detail/6" target="_blank" rel="noopener">负载均衡高手炼成记</a></p>
-<h3 id="高并发架构之路"><a href="#高并发架构之路" class="headerlink" title="高并发架构之路"></a>高并发架构之路</h3><h4 id="共15章-sery"><a href="#共15章-sery" class="headerlink" title="共15章 | sery"></a>共15章 | <a href="https://blog.51cto.com/sery" target="_blank" rel="noopener">sery</a></h4><h5 id="￥51-00-537人订阅"><a href="#￥51-00-537人订阅" class="headerlink" title="￥51.00 537人订阅"></a>￥51.00 537人订阅</h5><p><a href="https://blog.51cto.com/cloumn/detail/6" target="_blank" rel="noopener">订   阅</a></p>
-<h1 id="猜你喜欢"><a href="#猜你喜欢" class="headerlink" title="猜你喜欢"></a>猜你喜欢</h1><p><a href="https://blog.51cto.com/363918/1341977?source=drt" target="_blank" rel="noopener">linux命令eval的用法</a><a href="https://blog.51cto.com/xujpxm/1961072?source=drt" target="_blank" rel="noopener">Linux MemFree与MemAvailable的区别</a><a href="https://blog.51cto.com/richardlee/5166?source=drt" target="_blank" rel="noopener">“Linux”真确读音！</a><a href="https://blog.51cto.com/bguncle/1392870?source=drt" target="_blank" rel="noopener">linux升级OpenSSL</a><a href="https://blog.51cto.com/rajaruan/822199?source=drt" target="_blank" rel="noopener">linux命令之nohup</a><a href="https://blog.51cto.com/12947851/2067548?source=drt" target="_blank" rel="noopener">linux系统日志</a><a href="https://blog.51cto.com/kexiaoke/2119343?source=drt" target="_blank" rel="noopener">Linux进程内存统计</a><a href="https://blog.51cto.com/breaklinux/2442123?source=drh" target="_blank" rel="noopener">K8S 运维技巧–DNS 部分;</a><a href="https://blog.51cto.com/zhongxiaofei/2441908?source=drh" target="_blank" rel="noopener">linux7下虚拟主机的三种实现方式</a><a href="https://blog.51cto.com/14306186/2441132?source=drh" target="_blank" rel="noopener">ELK日志分析系统</a><a href="https://blog.51cto.com/14080162/2440659?source=drh" target="_blank" rel="noopener">Shell编程——case语句与循环语句（3）</a></p>
-<p><img src="https://s1.51cto.com/images/blog/201905/05/f92360e227f9d91cdff7ea95120630ef.png" alt="img"></p>
 
             </div>
             <hr/>
@@ -1018,27 +840,19 @@ centOS6.6安装图解
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/11/18/redis+linux/01/">
+                <a href="/2019/11/18/env/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="redis+linux/01">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="编程环境">
                         
-                        <span class="card-title">redis+linux/01</span>
+                        <span class="card-title">编程环境</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            redis01(centos6–yum)
-第一天第一节(配置下载)
-centos6的安装
-根据02.md来安装系统
-
-paralllel tools的安装
-
-把其他用户拥有root权限
-到root用户修改权限 位于/etc/sudoers文
+                            配置软件,原来这么简单!
                         
                     </div>
                     <div class="publish-info">
@@ -1060,10 +874,6 @@ paralllel tools的安装
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/linux/">
-                        <span class="chip bg-color">linux</span>
-                    </a>
-                    
                     <a href="/tags/%E9%85%8D%E7%BD%AE/">
                         <span class="chip bg-color">配置</span>
                     </a>
@@ -1079,22 +889,19 @@ paralllel tools的安装
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/18/redis+linux/03/">
+                <a href="/2019/11/18/vim/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="redis+linux/03">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="vim">
                         
-                        <span class="card-title">redis+linux/03</span>
+                        <span class="card-title">vim</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            redis03第一天第一节(redis常用命令)
-数组和链表的选择
-Java List ：  数组ArrayList   优点:访问快  缺点:存储慢
-​                    链表LinkedList  优点:访问慢  缺
+                            一篇让你'秒懂'的vim编辑器使用技巧教程
                         
                     </div>
                     <div class="publish-info">
@@ -1105,8 +912,8 @@ Java List ：  数组ArrayList   优点:访问快  缺点:存储慢
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E9%85%8D%E7%BD%AE/" class="post-category">
-                                    配置
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                    计算机
                                 </a>
                             
                             
@@ -1116,12 +923,8 @@ Java List ：  数组ArrayList   优点:访问快  缺点:存储慢
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/linux/">
-                        <span class="chip bg-color">linux</span>
-                    </a>
-                    
-                    <a href="/tags/%E9%85%8D%E7%BD%AE/">
-                        <span class="chip bg-color">配置</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">
+                        <span class="chip bg-color">计算机</span>
                     </a>
                     
                 </div>
@@ -1156,104 +959,6 @@ Java List ：  数组ArrayList   优点:访问快  缺点:存储慢
 
 <!-- 代码块折行 -->
 
-<style type="text/css">
-code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
-</style>
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            // headingsOffset: -205,
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
     
 
 </main>
@@ -1271,7 +976,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">9.8k</span>&nbsp;字
+                class="white-color">9.9k</span>&nbsp;字
             
             
             
