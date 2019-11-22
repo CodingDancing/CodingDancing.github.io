@@ -140,7 +140,7 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>朋友</span>
+      <span>友情链接</span>
     </a>
     
   </li>
@@ -278,7 +278,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			朋友
+			友情链接
 		</a>
           
         </li>
@@ -424,13 +424,6 @@
 
 <div id="page" class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
     
-    <div id="prev-cover" class="left waves-effect carousel-control">
-        <i class="icon fas fa-angle-left"></i>
-    </div>
-    <div id="next-cover" class="right waves-effect carousel-control">
-        <i class="icon fas fa-angle-right"></i>
-    </div>
-    
 
     <div class="carousel-item red white-text bg-cover about-cover">
         <div class="container" style="right: 0px;left: 0px;">
@@ -465,7 +458,9 @@
 
 
 <script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    // $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)'));
+     $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/CodingDancing/CDN/blog/source/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
 
 
@@ -514,54 +509,6 @@
         </div>
     </div>
 
-    
-    
-
-    
-    
-    <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('/medias/featureimages/14.jpg');">
-        <div class="container" style="right: 0px;left: 0px;">
-            <div class="row">
-                <div class="col s10 offset-s1">
-                    <div class="title center-align">Mac软件</div>
-                    <div class="description center-align">
-                    
-                        一篇让你'欲罢不能'的软件资源文章
-                    
-                    </div>
-                    <div class="cover-btns">
-                        <a href="/2019/11/18/MacOS%E6%95%88%E7%8E%87%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/" class="waves-effect waves-light btn" target="_blank">
-                            <i class="icon far fa-eye fa-fw"></i>阅读更多
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('/medias/featureimages/2.jpg');">
-        <div class="container" style="right: 0px;left: 0px;">
-            <div class="row">
-                <div class="col s10 offset-s1">
-                    <div class="title center-align">vim</div>
-                    <div class="description center-align">
-                    
-                        一篇让你'秒懂'的vim编辑器使用技巧教程
-                    
-                    </div>
-                    <div class="cover-btns">
-                        <a href="/2019/11/18/vim/" class="waves-effect waves-light btn" target="_blank">
-                            <i class="icon far fa-eye fa-fw"></i>阅读更多
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
     
 </div>
 
@@ -661,7 +608,7 @@ $(function () {
         volume: Number('0.7'),
         listFolded: 'false' === 'true',
         listMaxHeight: '',
-        audio: JSON.parse('[{"name":"说好不哭混剪版本","artist":"Jay","url":"https://fong111.github.io/other/resources/audio/doncry.mp3","cover":"/medias/music/cover2.png"}]')
+        audio: JSON.parse('[{"name":"说好不哭混剪版本","artist":"Jay","url":"https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/musics/doncry.mp3","cover":"/medias/music/cover2.png"}]')
     });
 });
 </script>
@@ -683,7 +630,7 @@ $(function () {
     
     
     <div class="col s12 m6" >
-        <div class="post-card" style="background-image: url('/medias/featureimages/2.jpg')">
+        <div class="post-card" style="background-image: url('https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/06.jpg')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -709,7 +656,7 @@ $(function () {
     
     
     <div class="col s12 m6" >
-        <div class="post-card" style="background-image: url('/medias/featureimages/22.jpg')">
+        <div class="post-card" style="background-image: url('https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/02.jpg')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -756,7 +703,7 @@ $(function () {
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="高效在线工具类">
+                            <img src="https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/02.jpg" class="responsive-img" alt="高效在线工具类">
                             
                             <span class="card-title">高效在线工具类</span>
                         </div>
@@ -799,11 +746,11 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/11/19/matlab/%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B01/">
+                    <a href="/2019/11/19/matlab/%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B07/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="matlab">
+                            <img src="https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/07.jpg" class="responsive-img" alt="matlab">
                             
                             <span class="card-title">matlab</span>
                         </div>
@@ -846,11 +793,11 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/11/19/matlab/%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B07/">
+                    <a href="/2019/11/19/matlab/%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B01/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="matlab">
+                            <img src="https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/07.jpg" class="responsive-img" alt="matlab">
                             
                             <span class="card-title">matlab</span>
                         </div>
@@ -897,7 +844,7 @@ $(function () {
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="linux命令B站灯笼/入门教程01">
+                            <img src="https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/06.jpg" class="responsive-img" alt="linux命令B站灯笼/入门教程01">
                             
                             <span class="card-title">linux命令B站灯笼/入门教程01</span>
                         </div>
@@ -967,7 +914,7 @@ rmdi
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="nginx">
+                            <img src="https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/03.jpg" class="responsive-img" alt="nginx">
                             
                             <span class="card-title">nginx</span>
                         </div>
@@ -1018,7 +965,7 @@ rmdi
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="docker/01">
+                            <img src="https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/02.jpg" class="responsive-img" alt="docker/01">
                             
                             <span class="card-title">docker/01</span>
                         </div>
@@ -1077,7 +1024,7 @@ minimal的centos6.5报错,应该跟网络有关
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="linux命令B站灯笼/入门教程02">
+                            <img src="https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/05.jpg" class="responsive-img" alt="linux命令B站灯笼/入门教程02">
                             
                             <span class="card-title">linux命令B站灯笼/入门教程02</span>
                         </div>
@@ -1124,20 +1071,20 @@ rm  -rf 1.txt
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/11/18/MacOS%E6%95%88%E7%8E%87%E8%BD%AF%E4%BB%B6%E6%B8%85%E5%8D%95/">
+                    <a href="/2019/11/18/vim/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Mac软件">
+                            <img src="https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/06.jpg" class="responsive-img" alt="vim">
                             
-                            <span class="card-title">Mac软件</span>
+                            <span class="card-title">vim</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一篇让你'欲罢不能'的软件资源文章
+                                一篇让你'秒懂'的vim编辑器使用技巧教程
                             
                         </div>
                         <div class="publish-info">
@@ -1148,8 +1095,8 @@ rm  -rf 1.txt
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/%E8%B5%84%E6%BA%90/" class="post-category">
-                                    资源
+                                <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                    计算机
                                 </a>
                                 
                                 
@@ -1160,12 +1107,8 @@ rm  -rf 1.txt
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E8%B5%84%E6%BA%90/">
-                            <span class="chip bg-color">资源</span>
-                        </a>
-                        
-                        <a href="/tags/Markdown/">
-                            <span class="chip bg-color">Markdown</span>
+                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">
+                            <span class="chip bg-color">计算机</span>
                         </a>
                         
                     </div>
@@ -1179,7 +1122,7 @@ rm  -rf 1.txt
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="linux命令B站灯笼/入门教程03">
+                            <img src="https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/04.jpg" class="responsive-img" alt="linux命令B站灯笼/入门教程03">
                             
                             <span class="card-title">linux命令B站灯笼/入门教程03</span>
                         </div>
@@ -1244,7 +1187,7 @@ echo $a
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="anaconda">
+                            <img src="https://cdn.jsdelivr.net/gh/CodingDancing/CDN//blog/source/medias/featureimages/08.jpg" class="responsive-img" alt="anaconda">
                             
                             <span class="card-title">anaconda</span>
                         </div>
